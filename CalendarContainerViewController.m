@@ -9,20 +9,30 @@
 #import "CalendarContainerViewController.h"
 
 @interface CalendarContainerViewController ()
+
 @property (weak, nonatomic) IBOutlet UIView *CalendarSwitch;
 
 @end
 
 @implementation CalendarContainerViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)calendarViewToggled:(id)sender {
+    
+    UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
+    NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
+    
+    if( selectedSegment == 0) {
+        //calendar
+        
+    } else {
+        //events
+        
+    }
 }
 
 @end
