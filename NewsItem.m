@@ -10,4 +10,17 @@
 
 @implementation NewsItem
 
+-(NewsItem*) newsItem:(NSString *) title
+           linkString:(NSString *)link
+    descriptionString:(NSString *)description
+           dateString:(NSString *)date
+{
+    self.newsItemTitle = title;
+    self.newsItemLink = link;
+    self.newsItemDescription = description;
+    self.newsItemPubDate = date;
+    
+    return self;
+}
+
 @end

@@ -38,6 +38,7 @@
     }
 }
 
+//get a reference to the child/container view controller
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"embedSwappingViewController"]) {
         self.swappingViewController = segue.destinationViewController;

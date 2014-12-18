@@ -16,4 +16,9 @@
 @property NSString * newsItemCategory;
 @property NSString * newsItemPubDate;
 
+-(NewsItem*) newsItem:(NSString *) title
+          linkString:(NSString *)link
+   descriptionString:(NSString *)description
+           dateString:(NSString *)date;
+
 @end
