@@ -7,10 +7,13 @@
 //
 
 #import "CalendarContainerViewController.h"
+#import "SwappingViewViewController.h"
 
 @interface CalendarContainerViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *CalendarSwitch;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) SwappingViewViewController *swappingViewController;
 
 @end
 
@@ -28,10 +31,16 @@
     
     if( selectedSegment == 0) {
         //calendar
-        
+        [self.swappingViewController swapViewControllers: 0];
     } else {
         //events
-        
+        [self.swappingViewController swapViewControllers: 1];
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"embedSwappingViewController"]) {
+        self.swappingViewController = segue.destinationViewController;
     }
 }
 

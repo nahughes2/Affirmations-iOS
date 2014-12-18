@@ -65,4 +65,9 @@
     [self performSegueWithIdentifier:self.currentSegueIdentifier sender:nil];
 }
 
+-(void)swapViewControllers:(int)viewToDisplay {
+    self.currentSegueIdentifier = (viewToDisplay  == 1) ? SegueIdentifierSecond : SegueIdentifierFirst;
+    [self performSegueWithIdentifier:self.currentSegueIdentifier sender:nil];
+}
+
 @end

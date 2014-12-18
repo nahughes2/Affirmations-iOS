@@ -10,4 +10,6 @@
 
 @interface SwappingViewViewController : UIViewController
 
+-(void)swapViewControllers:(int) viewToDisplay;
+
 @end

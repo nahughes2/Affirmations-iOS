@@ -85,7 +85,7 @@
                                             <constraint firstAttribute="width" constant="600" id="sD8-gG-c8I"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="vj7-CD-euH" kind="embed" id="EMx-Uz-SNp"/>
+                                            <segue destination="vj7-CD-euH" kind="embed" identifier="embedSwappingViewController" id="EMx-Uz-SNp"/>
                                         </connections>
                                     </containerView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cr0-zy-V9O">
@@ -143,6 +143,7 @@
                     <tabBarItem key="tabBarItem" title="Calendar" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="CalendarSwitch" destination="ZrP-0y-Sld" id="vAJ-jZ-2N1"/>
+                        <outlet property="containerView" destination="eia-SP-Ysn" id="0Hi-6c-pwb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -217,7 +218,7 @@
                         <viewControllerLayoutGuide type="top" id="yeB-9P-VAe"/>
                         <viewControllerLayoutGuide type="bottom" id="G6E-Ln-6eW"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TOH-8A-9Ei" customClass="Swa">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TOH-8A-9Ei">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="511"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
