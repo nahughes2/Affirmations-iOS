@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    //self.navigationController.navigationBar.hidden = YES;
     self.newsItemsArray = [NSMutableArray array];
     //fake data item
     for (int i = 0; i < 12; i++) {
